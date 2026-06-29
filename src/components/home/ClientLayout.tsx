@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import OptimizedHeader from './OptimizedHeader';
-import OptimizedFooter from './OptimizedFooter';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import OptimizedHeader from '@/components/layout/OptimizedHeader';
+import OptimizedFooter from '@/components/layout/OptimizedFooter';
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();

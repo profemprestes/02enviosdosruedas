@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import HeroAnimado from '@/src/components/HeroAnimado';
-import VisionSection from '@/src/components/VisionSection';
-import ServicesOverview from '@/src/components/ServicesOverview';
-import SliderServicios from '@/src/components/SliderServicios';
-import EmprendedoresHome from '@/src/components/EmprendedoresHome';
-import CtaSection from '@/src/components/CtaSection';
-import CarruselRedes from '@/src/components/CarruselRedes';
+import HeroAnimado from '@/components/home/HeroAnimado';
+import VisionSection from '@/components/home/VisionSection';
+import ServicesOverview from '@/components/home/ServicesOverview';
+import SliderServicios from '@/components/home/SliderServicios';
+import EmprendedoresHome from '@/components/home/EmprendedoresHome';
+import CtaSection from '@/components/home/CtaSection';
+import CarruselRedes from '@/components/layout/CarruselRedes';
 
 export const metadata: Metadata = {
   title: 'Mensajería y Logística E-commerce en Mar del Plata | Envíos DosRuedas',
