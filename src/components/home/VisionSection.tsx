@@ -12,50 +12,55 @@ export default function VisionSection() {
   ];
 
   return (
-    <section id="vision-section" className="py-24 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="vision-section" className="py-24 bg-white relative overflow-hidden border-b-[5px] border-brand-black">
+      {/* Grid Pattern */}
+      <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] [background-size:32px_32px]" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Information Block */}
           <div className="lg:col-span-6 space-y-6">
-            <span className="px-3 py-1 bg-blue-50 text-brand-blue rounded-full text-xs font-bold uppercase tracking-widest inline-block">
-              Partner Logístico Especializado
-            </span>
+            <div className="inline-block">
+              <span className="px-3.5 py-2 bg-brand-blue text-brand-yellow font-subheading uppercase tracking-widest text-xs neo-border shadow-[2px_2px_0px_0px_#0A0B0D] rotate-[-1.5deg] inline-block">
+                Partner Logístico Especializado
+              </span>
+            </div>
             
-            <h2 className="text-slate-900 text-3xl sm:text-4xl lg:text-5xl font-display uppercase tracking-tight leading-none">
+            <h2 className="text-brand-black text-4xl sm:text-5xl lg:text-6xl font-display uppercase tracking-tight leading-[0.95]">
               Nuestra Visión Logística
             </h2>
             
-            <p className="text-slate-600 text-lg leading-relaxed font-sans max-w-xl">
-              Transformamos tus costos fijos en solutions flexibles que acompañan el crecimiento de tu negocio.
+            <p className="text-gray-700 text-lg leading-relaxed font-sans max-w-xl font-medium">
+              Transformamos tus costos fijos en soluciones flexibles que acompañan el crecimiento de tu negocio.
             </p>
 
-            <div className="space-y-4 pt-4">
+            <div className="space-y-5 pt-4">
               {/* Feature 1 */}
-              <div className="flex gap-4 items-start p-4 rounded-xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-100">
-                <div className="p-3 bg-brand-blue/10 text-brand-blue rounded-xl shrink-0">
+              <div className="flex gap-4 items-start p-4 rounded-md bg-white neo-border shadow-[3px_3px_0px_0px_#0A0B0D] rotate-[-0.5deg]">
+                <div className="p-3 bg-brand-yellow text-brand-black neo-border rounded shrink-0 shadow-[1px_1px_0px_0px_#0A0B0D]">
                   <Clock className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-subheading uppercase tracking-wider text-slate-900 leading-none mb-1">
+                  <h4 className="text-base font-subheading uppercase tracking-wider text-brand-blue leading-none mb-1">
                     Entregas a Tiempo
                   </h4>
-                  <p className="text-sm text-slate-500 font-sans">
+                  <p className="text-xs text-gray-600 font-sans font-semibold">
                     Puntualidad garantizada en cada envío.
                   </p>
                 </div>
               </div>
 
               {/* Feature 2 */}
-              <div className="flex gap-4 items-start p-4 rounded-xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-100">
-                <div className="p-3 bg-brand-blue/10 text-brand-blue rounded-xl shrink-0">
+              <div className="flex gap-4 items-start p-4 rounded-md bg-white neo-border shadow-[3px_3px_0px_0px_#0A0B0D] rotate-[0.5deg]">
+                <div className="p-3 bg-brand-yellow text-brand-black neo-border rounded shrink-0 shadow-[1px_1px_0px_0px_#0A0B0D]">
                   <ShieldCheck className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-subheading uppercase tracking-wider text-slate-900 leading-none mb-1">
+                  <h4 className="text-base font-subheading uppercase tracking-wider text-brand-blue leading-none mb-1">
                     Envíos Seguros
                   </h4>
-                  <p className="text-sm text-slate-500 font-sans">
+                  <p className="text-xs text-gray-600 font-sans font-semibold">
                     Protección total de tus paquetes.
                   </p>
                 </div>
@@ -73,21 +78,21 @@ export default function VisionSection() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.1, duration: 0.5 }}
-                  className={`p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between ${
-                    i === 2 ? 'sm:col-span-2 bg-slate-50' : 'bg-white'
+                  transition={{ delay: i * 0.1, duration: 0.5, type: 'spring' }}
+                  className={`p-6 rounded-md neo-card neo-card-hover flex flex-col justify-between ${
+                    i === 2 ? 'sm:col-span-2 bg-brand-yellow text-brand-black rotate-[0.5deg]' : 'bg-white text-brand-black rotate-[-1deg]'
                   }`}
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <div className="p-3 rounded-xl bg-brand-blue/5 text-brand-blue">
+                    <div className="p-3 rounded neo-border bg-brand-blue text-brand-yellow shadow-[1px_1px_0px_0px_#0A0B0D]">
                       <Icon className="h-6 w-6" />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-3xl lg:text-4xl font-display text-brand-blue uppercase leading-none mb-1">
+                    <h3 className="text-4xl lg:text-5xl font-display text-brand-blue uppercase leading-none mb-1">
                       {stat.value}
                     </h3>
-                    <p className="text-xs text-slate-500 font-sans uppercase tracking-wider leading-relaxed">
+                    <p className="text-[10px] font-sans font-extrabold uppercase tracking-wider text-gray-700 leading-relaxed">
                       {stat.label}
                     </p>
                   </div>
