@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="main-footer" className="bg-brand-blue text-white border-t border-white/10 relative overflow-hidden">
+    <footer id="main-footer" className="gradient-blue text-white border-t border-white/10 relative overflow-hidden">
       
       {/* Decorative top yellow accent bar */}
       <div className="h-1 bg-brand-yellow w-full" />

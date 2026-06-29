@@ -8,7 +8,7 @@ export default function OptimizedFooter() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="optimized-footer" className="bg-brand-blue text-white border-t border-white/10 relative overflow-hidden">
+    <footer id="optimized-footer" className="gradient-blue text-white border-t border-white/10 relative overflow-hidden">
       
       {/* Decorative top yellow accent bar */}
       <div className="h-1 bg-brand-yellow w-full" />

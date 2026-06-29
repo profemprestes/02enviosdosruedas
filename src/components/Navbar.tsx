@@ -92,8 +92,8 @@ export default function Navbar() {
       id="main-navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-brand-blue shadow-lg border-b border-white/10 py-3' 
-          : 'bg-brand-blue py-4'
+          ? 'gradient-blue shadow-lg border-b border-white/10 py-3' 
+          : 'gradient-blue py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -233,7 +233,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden bg-brand-blue border-t border-white/10 mt-3 overflow-hidden"
+            className="lg:hidden gradient-blue border-t border-white/10 mt-3 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-3">
               {navItems.map((item) => (
