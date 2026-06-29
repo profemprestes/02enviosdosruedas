@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HeroAnimado from '@/components/home/HeroAnimado';
+import DoubleTicker from '@/components/home/DoubleTicker';
 import VisionSection from '@/components/home/VisionSection';
 import ServicesOverview from '@/components/home/ServicesOverview';
 import SliderServicios from '@/components/home/SliderServicios';
@@ -17,6 +18,9 @@ export default function Home() {
     <div id="home-page-container" className="w-full">
       {/* 1. Animated Hero Presentation */}
       <HeroAnimado />
+
+      {/* Double Marquee Separator Ticker */}
+      <DoubleTicker />
 
       {/* 2. Brand Vision Segment */}
       <VisionSection />

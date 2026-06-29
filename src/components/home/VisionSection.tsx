@@ -72,15 +72,23 @@ export default function VisionSection() {
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {stats.map((stat, i) => {
               const Icon = stat.icon;
+              const initialRotation = i % 2 === 0 ? -6 : 6;
+              const targetRotation = i === 2 ? 0.5 : (i % 2 === 0 ? -1 : 1);
               return (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1, duration: 0.5, type: 'spring' }}
-                  className={`p-6 rounded-md neo-card neo-card-hover flex flex-col justify-between ${
-                    i === 2 ? 'sm:col-span-2 bg-brand-yellow text-brand-black rotate-[0.5deg]' : 'bg-white text-brand-black rotate-[-1deg]'
+                  initial={{ opacity: 0, y: 40, rotate: initialRotation, scale: 0.9 }}
+                  whileInView={{ opacity: 1, y: 0, rotate: targetRotation, scale: 1 }}
+                  whileHover={{ 
+                    scale: 1.03, 
+                    rotate: 0, 
+                    y: -4,
+                    transition: { type: 'spring', stiffness: 300, damping: 12 } 
+                  }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ delay: i * 0.15, type: 'spring', stiffness: 120, damping: 12 }}
+                  className={`p-6 rounded-md neo-card flex flex-col justify-between cursor-pointer ${
+                    i === 2 ? 'sm:col-span-2 bg-brand-yellow text-brand-black' : 'bg-white text-brand-black'
                   }`}
                 >
                   <div className="flex justify-between items-start mb-4">

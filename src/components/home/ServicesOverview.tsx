@@ -65,16 +65,22 @@ export default function ServicesOverview() {
           {services.map((service, index) => {
             const Icon = service.icon;
             const isEven = index % 2 === 0;
+            const initialRotation = isEven ? -5 : 5;
+            const targetRotation = isEven ? -0.5 : 0.5;
             return (
               <motion.div
                 key={service.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1, type: 'spring' }}
-                className={`bg-white text-brand-black rounded-md p-8 neo-border shadow-[5px_5px_0px_0px_#0A0B0D] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_#0A0B0D] transition-all duration-150 flex flex-col justify-between group ${
-                  isEven ? 'rotate-[-0.5deg]' : 'rotate-[0.5deg]'
-                }`}
+                initial={{ opacity: 0, y: 40, rotate: initialRotation, scale: 0.92 }}
+                whileInView={{ opacity: 1, y: 0, rotate: targetRotation, scale: 1 }}
+                whileHover={{ 
+                  scale: 1.025, 
+                  rotate: 0,
+                  y: -4,
+                  transition: { type: 'spring', stiffness: 300, damping: 12 }
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: index * 0.15, type: 'spring', stiffness: 120, damping: 12 }}
+                className="bg-white text-brand-black rounded-md p-8 neo-border shadow-[5px_5px_0px_0px_#0A0B0D] hover:shadow-[3px_3px_0px_0px_#0A0B0D] transition-shadow duration-150 flex flex-col justify-between group cursor-pointer"
               >
                 <div>
                   <div className="flex justify-between items-start mb-6">
