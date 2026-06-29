@@ -1,0 +1,35 @@
+import type { Metadata } from 'next';
+import { Inter, Anton, Bebas_Neue } from 'next/font/google';
+import './globals.css'; 
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
+
+const anton = Anton({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-display',
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-subheading',
+});
+
+export const metadata: Metadata = {
+  title: 'Envíos DosRuedas - Mensajería & Logística en Mar del Plata',
+  description: 'La solución logística y última milla de mayor confianza en Mar del Plata. Envíos Express, MercadoLibre Flex, ruteo eficiente y cadetería inteligente.',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="es" className={`${inter.variable} ${anton.variable} ${bebasNeue.variable} scroll-smooth`}>
+      <body className="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-yellow selection:text-brand-blue" suppressHydrationWarning>
+        {children}
+      </body>
+    </html>
+  );
+}
