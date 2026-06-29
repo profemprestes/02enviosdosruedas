@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Anton, Bebas_Neue } from 'next/font/google';
 import './globals.css'; 
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,8 +29,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={`${inter.variable} ${anton.variable} ${bebasNeue.variable} scroll-smooth`}>
-      <body className="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-yellow selection:text-brand-blue" suppressHydrationWarning>
-        {children}
+      <body className="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-yellow selection:text-brand-blue min-h-screen flex flex-col" suppressHydrationWarning>
+        <Navbar />
+        <main className="flex-grow pt-20">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
