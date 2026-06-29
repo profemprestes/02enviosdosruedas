@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { 
+import {
   Bike, Phone, MapPin, Mail, Clock, Instagram, Facebook, Award, ArrowUpRight,
   Zap, TrendingDown, ShoppingBag, Info, HelpCircle, Calculator
 } from 'lucide-react';
@@ -12,13 +12,13 @@ export default function Footer() {
 
   return (
     <footer id="main-footer" className="gradient-blue text-white border-t border-white/10 relative overflow-hidden">
-      
+
       {/* Decorative top yellow accent bar */}
       <div className="h-1 bg-brand-yellow w-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 items-start">
-          
+
           {/* COLUMN 1: Brand details & Socials (4 Cols) */}
           <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="flex items-center gap-2.5 group">
@@ -27,14 +27,14 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-display text-2xl tracking-wider text-white">
-                  DOS<span className="text-brand-yellow">RUEDAS</span>
+                  ENVIOS<span className="text-brand-yellow">DOSRUEDAS</span>
                 </span>
                 <span className="block text-[10px] font-mono tracking-widest text-blue-200 uppercase leading-none">
                   Mensajería & Logística
                 </span>
               </div>
             </Link>
-            
+
             <p className="text-blue-100 text-sm leading-relaxed max-w-sm">
               La solución de logística, envíos express y distribución de última milla líder en Mar del Plata. Conectamos locales, e-commerce y particulares con un servicio inteligente y confiable.
             </p>
@@ -74,8 +74,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link 
-                  href="/servicios/envios-express" 
+                <Link
+                  href="/servicios/envios-express"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <Zap className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -84,8 +84,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/servicios/envios-lowcost" 
+                <Link
+                  href="/servicios/envios-lowcost"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <TrendingDown className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -94,8 +94,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/servicios/enviosflex" 
+                <Link
+                  href="/servicios/enviosflex"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <Clock className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -104,8 +104,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/servicios/plan-emprendedores" 
+                <Link
+                  href="/servicios/plan-emprendedores"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <ShoppingBag className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -123,8 +123,8 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link 
-                  href="/nosotros/sobre-nosotros" 
+                <Link
+                  href="/nosotros/sobre-nosotros"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <Info className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -133,8 +133,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/nosotros/preguntas-frecuentes" 
+                <Link
+                  href="/nosotros/preguntas-frecuentes"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <HelpCircle className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -143,8 +143,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/contacto" 
+                <Link
+                  href="/contacto"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <Mail className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -153,8 +153,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/cotizar/express" 
+                <Link
+                  href="/cotizar/express"
                   className="text-blue-100 hover:text-brand-yellow flex items-center gap-2 group transition-colors"
                 >
                   <Calculator className="h-4 w-4 text-brand-yellow shrink-0" />
@@ -170,9 +170,9 @@ export default function Footer() {
             <h4 className="font-subheading text-lg tracking-wider text-brand-yellow uppercase">
               Contacto Principal
             </h4>
-            
+
             <div className="space-y-3.5 text-xs text-blue-100">
-              
+
               <div className="flex gap-3 items-start">
                 <MapPin className="h-4.5 w-4.5 text-brand-yellow shrink-0 mt-0.5" />
                 <div>
