@@ -1,82 +1,53 @@
-# Guia Maestra para Prompts de Diseno y Desarrollo Web en Stitch
+# Guía de Prompts de Inicialización (Envíos DosRuedas)
 
-Para obtener una landing page de alta fidelidad, profesional y lista para usar, utiliza esta estructura. Copia y completa los campos segun tu proyecto.
+Este archivo contiene el prompt único de inicialización del proyecto **Envíos DosRuedas**. Está diseñado para ser copiado y pegado en herramientas de generación de código (como Google Stitch u otros LLMs) para crear o estructurar toda la aplicación funcional y lógica de negocio desde cero, respetando la resolución de rutas de importación estándar.
 
 ---
 
-## 1. Identidad del Proyecto
-*   **Nombre de la Marca:** Envios DosRuedas
-*   **Rubro/Industria:** Logistica de Ultima Milla, Mensajeria y Soluciones E-Commerce (3PL)
-*   **Propuesta de Valor Unica:** Soluciones rapidas, seguras y flexibles de mensajeria, envios Flex y ruteo LowCost en Mar del Plata para potenciar el crecimiento de PyMEs, e-commerce y particulares.
+## 🚀 Prompt Maestro de Inicialización (Copiar y Pegar)
 
-## 2. Estructura y Secciones (IA)
-Estructura de la pagina de inicio optimizada para Envios DosRuedas:
+```text
+Crea e inicializa la estructura lógica y funcional completa para el proyecto de mensajería y logística "Envíos DosRuedas" utilizando Next.js 16 (App Router), React 19, Motion (Framer Motion 12) y Lucide React.
 
-1.  **OptimizedHeader:** 
-    *   **Logo Text:** Envios Dosruedas (tu solucion confiable)
-    *   **Navigation Links:** Inicio, Servicios (Dropdown: Envios Express, Envios LowCost, Envios Flex (MeLi), E-Commerce & 3PL), Nosotros (Dropdown: Sobre Nosotros, Preguntas Frecuentes, Nuestras Redes), Contacto
-    *   **Call to Action:** Cotizar Envio
-    *   **Phone:** +54 223 660-2699
-2.  **HeroAnimado:** 
-    *   **Badge:** Tu Solucion Confiable
-    *   **Heading:** Mensajeria y Logistica E-Commerce en Mar del Plata
-    *   **Body:** Somos tu solucion confiable en servicios de mensajeria y delivery en Mar del Plata. Ofrecemos soluciones rapidas, seguras y economicas para todas tus necesidades de envio.
-    *   **Buttons:** Solicitar Servicio, Ver Servicios
-    *   **Features:** 100% SEGURO, ULTRA RAPIDO, COBERTURA TOTAL
-3.  **VisionSection (Nuestra Vision Logistica):**
-    *   **Badge:** Partner Logistico Especializado
-    *   **Heading:** Nuestra Vision Logistica
-    *   **Body:** Transformamos tus costos fijos en solutions flexibles que acompañan el crecimiento de tu negocio.
-    *   **Features:**
-        *   Entregas a Tiempo: Puntualidad garantizada en cada envio.
-        *   Envios Seguros: Proteccion total de tus paquetes.
-    *   **Stats:**
-        *   +5.000: Confianza local comprobada
-        *   7 Años: Innovacion constante en ultima milla
-        *   Flota Exclusiva: Motocicletas dedicadas para maxima agilidad urbana
-4.  **ServicesOverview (Soluciones Logisticas):**
-    *   **Heading:** Soluciones Logisticas
-    *   **Services:**
-        *   **Envios Express:** Prioridad absoluta y certeza total. Vos elegis el rango exacto de entrega con solo 2 horas de anticipacion.
-        *   **Envios LowCost:** Rentabilidad y ruteo masivo. Ingresa tus pedidos antes de las 13:00 hs y garantizamos entrega en el dia.
-        *   **Envios Flex (MercadoLibre):** Potencia tu reputacion al maximo. Somos expertos en MercadoLibre. Cumplimos tus acuerdos de nivel de servicio (SLAs) Same-Day.
-        *   **E-Commerce & 3PL:** Tercerizacion y cuentas corrientes. Soluciones escalables para PyMEs con facturacion mensual centralizada.
-5.  **SliderServicios (Soluciones a Medida):**
-    *   **Heading:** SOLUCIONES A MEDIDA
-    *   **Body:** Hemos redefinido los estandares de la logistica urbana para ofrecerte una ventaja competitiva real en un mercado en constante de evolucion.
-    *   **Slides:** Agilidad Urbana, Trazabilidad Inteligente, Custodia Total, Transparencia Absoluta.
-6.  **EmprendedoresHome (Potencia tu Logistica):**
-    *   **Heading:** Potencia tu Logistica con DosRuedas
-    *   **Solutions:**
-        *   **Soluciones Corporativas:** Optimizacion logistica para empresas con Cuenta Corriente Flexible y beneficios de escala.
-        *   **Envios Flex MercadoLibre:** Socio estrategico para potenciar tus ventas con entregas en el dia.
-        *   **Logistica E-Commerce:** Gestion integral de ultima milla para PyMEs en crecimiento.
-7.  **CtaSection (Llamado a la Accion):**
-    *   **Heading:** ¿Listo para escalar la logistica de tu E-Commerce?
-    *   **Body:** Olvidate de la gestion de paquetes y enfocate en vender mas. Deja la distribucion urbana en manos de expertos.
-    *   **Buttons:** Contactanos por WhatsApp, Ver Tarifas 2026
-8.  **CarruselRedes (Comunidad Digital):**
-    *   **Heading:** SIGUE NUESTRO MOVIMIENTO
-    *   **Body:** Unete a nuestra comunidad digital y mantente al dia con las ultimas noticias de logistica en Mar del Plata.
-    *   **Networks:** Instagram (Novedades diarias), Facebook (Comunidad activa), WhatsApp (Atencion inmediata)
-9.  **OptimizedFooter (Pie de Pagina):**
-    *   **Contact Info:**
-        *   Ubicacion: Friuli 1972, Mar del Plata
-        *   Telefono: +54 223 660-2699
-        *   Email: matiascejas@enviosdosruedas.com
-        *   Horarios: Lunes a Sabado: 08:00 a 20:00 hs
-    *   **Links:** Sobre Nosotros, Preguntas Frecuentes, Nuestras Redes, Terminos y Condiciones, Politica de Privacidad, Envios Express, Envios LowCost, Envios Flex (MeLi), E-Commerce & 3PL.
+REGLAS DE DISEÑO DE ARCHIVOS Y RUTAS:
+- Todas las importaciones de componentes deben resolverse mediante el alias de TypeScript estándar: "@/components/..." (por ejemplo: "@/components/layout/OptimizedHeader" o "@/components/home/DoubleTicker").
+- Todas las importaciones de la estructura de la aplicación y servicios deben apuntar a: "@/app/..." (por ejemplo: "@/app/servicios/envios-express/lib/gemini").
+- Evita de forma estricta el uso de alias incorrectos como "@/src/components/..." o "@/src/app/...". Toda importación debe mapear "src/app/" a "@/app/" y "src/components/" a "@/components/".
 
-## 3. Identidad Visual (Estilo)
-*   **Paleta de Colores:** Azul institucional de confianza (`brand-blue` - #0636A5) como tono dominante, combinado con amarillo vibrante de alta visibilidad vial y energia (`brand-yellow` - #FFEC01) como color de acento principal. Fondos claros en blanco y gris suave (`slate-50`).
-*   **Tipografia:** Inter (para legibilidad excelente en textos de interfaz), Anton y Bebas Neue (tipografias sans-serif display para encabezados y numeros de gran impacto visual).
-*   **Estetica General:** Moderna, activa y confiable. Inspira rapidez y dinamismo urbano mediante bordes suavizados (tarjetas redondeadas), amplios espacios de aire y sutiles gradientes de fondo.
-*   **Formas:** Esquinas redondeadas de gran radio (`rounded-3xl`), sombras discretas de profundidad y micro-interacciones interactivas con animaciones basadas en `motion`.
+ESTRUCTURA DE ARCHIVOS A CREAR Y CONFIGURAR:
 
-## 4. Contenido y Lenguaje
-*   **Idioma:** Español (con modismos locales argentinos como "Vos elegis", "Ingresa", "Deja", "Contactanos" y "Seguinos").
-*   **Tono de Voz:** Profesional, cercano, agil y centrado en aportar soluciones eficientes a PyMEs y e-commerce.
-*   **Textos Especificos:** Copywriting comercial altamente orientado a conversiones reales, enfatizando el año de referencia 2026 y la agilidad de los despachos locales.
+1. Layout y Envoltura Base (src/app/layout.tsx):
+   - Importaglobals.css.
+   - Carga las fuentes de Google: Inter, Anton, y Bebas_Neue. Configura sus variables CSS (--font-sans, --font-display, y --font-subheading).
+   - Renderiza un envolvedor ClientLayout que envuelve el OptimizedHeader, el contenido del children, y el OptimizedFooter.
 
-## 5. Objetivo Principal (CTA)
-*   **Accion Principal:** "Cotizar Envio" / "Solicitar Servicio" / "Contactar por WhatsApp" para derivar en conversiones y cotizaciones logísticas inmediatas.
+2. Barra de Navegación (src/components/layout/OptimizedHeader.tsx):
+   - Carga el logo oficial desde "/LogoEnviosDosRuedas.webp" utilizando el componente <Image> de Next.js (42x42px, object-contain, con prioridad de carga).
+   - Menú de navegación responsive para Escritorio y Móvil con links: Inicio (/), Servicios (Menú desplegable con links a: /servicios/envios-express, /servicios/envios-lowcost, /servicios/enviosflex, y /servicios/plan-emprendedores), Nosotros (Dropdown: /nosotros/sobre-nosotros, /nosotros/preguntas-frecuentes, /nosotros/nuestras-redes) y Contacto (/contacto).
+   - Botón de cotización que redirija a "/cotizar/express" y un enlace telefónico directo a "+54 223 660-2699".
+   - Soporte de transiciones y menús móviles animados usando Framer Motion y AnimatePresence.
+
+3. Pie de Página (src/components/layout/OptimizedFooter.tsx):
+   - Muestra el logo "/LogoEnviosDosRuedas.webp" sin fondos sólidos, enlaces de redes sociales (Instagram, Facebook, WhatsApp), datos de contacto principal ("Friuli 1972, Mar del Plata") y un grid responsive de enlaces de navegación internos.
+
+4. Landing Page Principal (src/app/page.tsx) y Componentes de Inicio:
+   - page.tsx: Llama secuencialmente a <HeroAnimado />, <DoubleTicker />, <VisionSection />, <ServicesOverview />, <SliderServicios />, <EmprendedoresHome />, <CtaSection /> y <CarruselRedes />.
+   - src/components/home/DoubleTicker.tsx [NUEVO]: Componente que renderiza dos cintas marquesina de texto infinito deslizándose en direcciones opuestas. Una marquesina muestra servicios rápidos ("ENVÍOS EN EL DÍA • MAR DEL PLATA • MOTO COURIER...") y la otra muestra soluciones comerciales ("MERCADOLIBRE FLEX • ENVIOS EXPRESS • CUENTAS PYMES...").
+   - src/components/home/HeroAnimado.tsx: Título principal de gran peso, bajada informativa de los servicios de paquetería local, y botones de CTA. Lista de ventajas táctiles (Seguro, Rápido, Cobertura).
+   - src/components/home/VisionSection.tsx: Panel con estadísticas animadas (+5.000 clientes, 7 Años, Flota Dedicada) e información sobre la visión del negocio.
+   - src/components/home/ServicesOverview.tsx: Grid para mapear las 4 soluciones principales con sus respectivas tarjetas informativas y botones de navegación individual.
+
+5. Calculadora Dinámica de Envíos (src/app/cotizar/express/page.tsx):
+   - Formulario de cotización de tres pasos (Paso 1: Direcciones de origen/destino y zonas de Mar del Plata; Paso 2: Detalles del paquete y horarios; Paso 3: Resumen de tarifas estimadas).
+   - Utiliza react-hook-form para la validación de campos obligatorios en cada paso.
+   - Genera un botón de confirmación en el paso final que abra un enlace a WhatsApp pre-completado con todos los datos del envío cotizado.
+
+6. Endpoint de Asistente de IA (src/app/api/assistant/route.ts):
+   - Expone un endpoint POST dinámico (export const dynamic = "force-dynamic").
+   - Importa getGeminiClient desde "@/app/servicios/envios-express/lib/gemini" para inicializar el modelo "gemini-3.5-flash" del SDK oficial @google/genai.
+   - Procesa la conversación del chat enviando un systemPrompt enriquecido con las reglas corporativas de Envíos DosRuedas (Friuli 1972, peso máximo 15 kg por moto, métodos de pago y zonas de Mar del Plata).
+
+REGLA CRÍTICA DE DISEÑO VISUAL:
+- Este prompt define estrictamente la estructura, rutas, dependencias de archivos y lógica funcional.
+- Toda la configuración visual específica (como códigos de colores, familias tipográficas exactas, tamaños de bordes y sombras sólidas o difusas) debe ser leída directamente desde el archivo de diseño del proyecto (DESIGN.md) y aplicada de forma desacoplada usando variables y utilidades en globals.css.
+```
